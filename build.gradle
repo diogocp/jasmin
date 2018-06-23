@@ -1,0 +1,19 @@
+plugins {
+    id 'java-library'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src', 'generated']
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/java_cup.jar')
+}
+
+repositories {
+    jcenter()
+}
